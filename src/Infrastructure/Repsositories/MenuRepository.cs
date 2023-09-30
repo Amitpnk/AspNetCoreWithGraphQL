@@ -26,7 +26,7 @@ namespace GraphQlProject.Infrastructure.Repsositories
             _menus.RemoveAt(id);
         }
 
-        public List<Menu> GetAllMenus()
+        public List<Menu> GetAllMenu()
         {
             return _menus;
         }
