@@ -1,6 +1,6 @@
 ﻿using GraphQlProject.Model;
 
-namespace GraphQlProject.Interfaces
+namespace GraphQlProject.Infrastructure.Repsositories
 {
     public interface IMenuRepository
     {

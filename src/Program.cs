@@ -3,10 +3,9 @@ using GraphQL.Types;
 using GraphQlProject.Graphql.Query;
 using GraphQlProject.Graphql.Schema;
 using GraphQlProject.Graphql.Type;
-using GraphQlProject.Interfaces;
-using GraphQlProject.Services;
 using Microsoft.AspNetCore.Builder;
 using GraphiQl;
+using GraphQlProject.Infrastructure.Repsositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

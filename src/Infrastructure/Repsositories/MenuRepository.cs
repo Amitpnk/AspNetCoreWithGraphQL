@@ -1,7 +1,6 @@
-﻿using GraphQlProject.Interfaces;
-using GraphQlProject.Model;
+﻿using GraphQlProject.Model;
 
-namespace GraphQlProject.Services
+namespace GraphQlProject.Infrastructure.Repsositories
 {
     public class MenuRepository : IMenuRepository
     {
