@@ -7,11 +7,11 @@ namespace GraphQlProject.Infrastructure.Repsositories
 
         private static List<Menu> _menus = new List<Menu>()
         {
-            new Menu(){ Id= 1, Name="Burger", Description ="burger", Price = 100},
-            new Menu(){ Id= 2, Name="Salad", Description ="salad", Price = 100},
-            new Menu(){ Id= 3, Name="Chocolate", Description ="chocolate", Price = 100},
-            new Menu(){ Id= 4, Name="Pizza", Description ="pizza", Price = 100},
-            new Menu(){ Id= 5, Name="Pasta", Description ="pasta", Price = 100},
+            new Menu(){ Id= 1, Name="Burger", Description ="burger", Price = 105, CategoryId =1, ImageUrl="burger.jpg"},
+            new Menu(){ Id= 2, Name="Salad", Description ="salad", Price = 206, CategoryId =3, ImageUrl="salad.jpg"},
+            new Menu(){ Id= 3, Name="Chocolate", Description ="chocolate", Price = 354, CategoryId =2, ImageUrl="chocolate.jpg"},
+            new Menu(){ Id= 4, Name="Pizza", Description ="pizza", Price = 150, CategoryId =1, ImageUrl="pizza.jpg"},
+            new Menu(){ Id= 5, Name="Pasta", Description ="pasta", Price = 250, CategoryId =3, ImageUrl="pasta.jpg"},
         };
 
 

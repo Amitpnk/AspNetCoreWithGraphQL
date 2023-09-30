@@ -13,11 +13,24 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+//Repository
 builder.Services.AddTransient<IMenuRepository, MenuRepository>();
+builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+builder.Services.AddTransient<IReservationRepository, ReservationRepository>();
 
+//Types
 builder.Services.AddTransient<MenuType>();
+builder.Services.AddTransient<CategoryType>();
+builder.Services.AddTransient<ReservationType>();
+
+//Query
 builder.Services.AddTransient<MenuQuery>();
-builder.Services.AddTransient<ISchema, MenuSchema>();
+builder.Services.AddTransient<CategoryQuery>();
+builder.Services.AddTransient<ReservationQuery>();
+builder.Services.AddTransient<RootQuery>();
+
+//Bind to RootSchema
+builder.Services.AddTransient<ISchema, RootSchema>();
 
 builder.Services.AddGraphQL(g => g.AddAutoSchema<ISchema>().AddSystemTextJson());
 
